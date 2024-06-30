@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.card {
+    width: 23rem;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    color: white;
+    text-align: center; /* Center-align the text */
+}
+
+.search-box {
+    margin: 10px 7px 20px 7px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-box .enter {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 1.7rem;
+    width: 18rem;
+    padding-left: 10px;
+    transition: border-color 0.3s;
+}
+
+.search-box .enter:focus {
+    border-color: #4e54c8;
+    outline: none;
+}
+
+.search-box .btn {
+    border: none;
+    height: 1.7rem;
+    width: 3rem;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #4e54c8;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.search-box .btn:hover {
+    background-color: #8f94fb;
+}
+
+.temp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none; /* Initially hidden */
+}
+
+.temp h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.temp .weathericon {
+    height: 150px;
+    width: 150px;
+}
+
+.card .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin: 20px auto 30px auto;
+    padding: 0 20px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.error {
+    text-align: left;
+    margin: 10px 10px;
+    font-size: 14px;
+    color: red;
+    display: none;
+}
